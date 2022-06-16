@@ -18,7 +18,7 @@ service = discovery.build('compute', 'v1', credentials=credentials)
 region = 'us-central1'      # add region
 
 # Project ID for this request.
-project = 'sonata-automation'           # Project ID
+project = 'tokyo-dynamo-349216'           # Project ID
 
 network_body = {
     "routingConfig": {
@@ -34,7 +34,7 @@ subnetwork_body = {
     "enableFlowLogs": False,
     'ipCidrRange': "10.0.0.0/24",   # range
     "name": "publicsubnet",
-    "network": "projects/sonata-automation/global/networks/sonatanetwork",  # important
+    "network": "projects/tokyo-dynamo-349216/global/networks/sonatanetwork",  # important
     "privateIpGoogleAccess": False,
     "region": f"{region}"
 }

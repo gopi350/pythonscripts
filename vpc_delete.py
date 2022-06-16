@@ -15,10 +15,10 @@ credentials = GoogleCredentials.get_application_default()
 service = discovery.build('compute', 'v1', credentials=credentials)
 
 # Project ID for this request.
-project = 'sonata-automation'
+project = 'tokyo-dynamo-349216'
 
 # Name of the network to delete.
-network = 'sonata-network'
+network = 'sonatanetwork'
 
 request = service.networks().delete(project=project, network=network)
 
